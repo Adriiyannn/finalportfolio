@@ -1,0 +1,97 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: rgb(29, 130, 220);
+  padding: 15px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: rgb(29, 130, 220);
+  border-radius: 5px;
+}
+
+/* About Me Section Styles */
+.about-me-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.about-me-content {
+  max-width: 600px;
+}
+
+.about-me-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: rgb(29, 130, 220);
+}
+
+.about-me-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* About Me Image Styles */
+.about-me-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-me-content {
+    margin-bottom: 30px;
+  }
+
+  .about-me-image img {
+    width: 150px;
+  }
+}
